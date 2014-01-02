@@ -399,7 +399,7 @@ img.nbn {
 
  }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
 
 img.online {
 	margin-left: 1em;
@@ -414,7 +414,7 @@ img.online {
 	}
  }
 
-@media (max-width: 350px) {
+@media screen and (max-width: 350px) {
 	img {
 		margin: 0 auto;
 	}
