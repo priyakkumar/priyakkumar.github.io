@@ -16,7 +16,7 @@ body {
 }
 
 .captioncontainer {
-	width: 300px;
+	width: 25%;
 	float: left;
 }
 #name {
@@ -65,7 +65,7 @@ img.wapo {
 }
 
 img.online {
-	width: 15em;
+	width: 90%;
 	border: 1px solid #d6d6d6;
 }
 
@@ -91,7 +91,7 @@ img:hover{
 p.text{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 14pt;
-	font-weight: 200;
+	font-weight: 300;
 	line-height: 30px; 
 	margin-top: 1%; 
 }
@@ -108,6 +108,7 @@ p.publication {
 	font-size: 22pt;
 	font-weight: 300;
 	margin-bottom: -0.1em;
+	margin-top: 0%;
 }
 
 i {
@@ -178,22 +179,12 @@ padding-left: 0;
 	#graphiccontainer {
 		width: 50%;
 	}
-	.captioncontainer {
-	width: 280px;
-	margin-left: 0px;
-	float: left;
-}
 }
 @media (max-width: 1400px) {
 	.imagecontainer {
 		width: 75%;
 	}
 
-	.captioncontainer {
-	width: 280px;
-	margin-left: 0px;
-	float: left;
-}
 }
 
 @media (max-width: 1360px) {
@@ -211,13 +202,6 @@ padding-left: 0;
 		width: 62%;
 	}
 
-	.captioncontainer {
-	width: 260px;
-	}
-
-	img.online {
-		width: 14em;
-	}
 }
 
 @media (max-width: 1152px) {
@@ -245,13 +229,6 @@ padding-left: 0;
   	width: 70%;
   }
 
-  .captioncontainer {
-  	width: 238px;
-  }
-
-  img.online {
-  	width: 13em;
-  }
 
   img.wapo {
   	height: 13em;
@@ -291,9 +268,6 @@ padding-left: 0;
   	width: 50%;
   }
 
-  img.online {
-  	width: 17em;
-  }
   }
 
   @media (max-width: 768px) {
@@ -311,15 +285,6 @@ padding-left: 0;
   	width: 12em;
   	height: 20em;
   }
-
-  .captioncontainer {
-	margin: 0 auto;
-	width: 50%;
-	}
-
-	img.online {
-		width: 18em;
-	}
 
   .resume {
 		width: 100%;
@@ -346,14 +311,6 @@ padding-left: 0;
 }
 
 @media (max-width: 767px) {
-	.captioncontainer {
-	margin: 0 auto;
-	width: 50%;
-	}
-
-	img.online {
-		width: 16em;
-	}
 
 }
 
@@ -394,7 +351,7 @@ img.nbn {
 
 .captioncontainer {
 	margin: 15px;
-	width: 75%;
+	width: 80%;
 }
 
  }
@@ -402,7 +359,7 @@ img.nbn {
 @media screen and (max-width: 400px) {
 
 img.online {
-	margin-left: 1em;
+	margin-left: 0em;
 	}
 
 .imagecontainer {
@@ -419,9 +376,6 @@ img.online {
 		margin: 0 auto;
 	}
 
-img.online {
-		width: 14em;
-	}
  img.wapo {
   	height: 23em;
   	width: 13em;
