@@ -1,0 +1,435 @@
+body {
+	background-color: #f7f7f7;
+}
+
+.wrapper {
+	background-image: url("img/bg.jpg");
+	/*position: absolute;*/
+	height: 200px;
+	top: 0;
+	list-style-type: none;
+	width: 101%;
+	text-align: center;
+	margin-top: -10px;
+	margin-left: -10px;
+	padding-right: 10px;
+}
+
+.captioncontainer {
+	width: 300px;
+	float: left;
+}
+#name {
+height: 134px;
+margin-top: 35px;
+width: 60%;
+margin-left: 20%;
+margin-right: 15%;
+position: absolute;
+background-color: #f7f7f7;
+}
+
+.resume {
+	width: 68%;
+	margin: 0 auto;
+}
+
+p {
+font-family: 'Oranienbaum', serif;
+font-size: 5em;
+margin-top: 1.5%;
+color: #424242;
+text-transform: none;
+text-align: center;
+padding-left: 2%;
+padding-right: 2%;
+}
+
+p.header:hover{
+	color: #008F96;
+}
+
+img.nbn {
+	height: 12em;
+	margin-right: 15px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+img.wapo {
+	height: 16em;
+	margin-right: 15px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+
+img.online {
+	width: 15em;
+	border: 1px solid #d6d6d6;
+}
+
+img:hover{
+	opacity: 0.7;
+}
+
+.imagecontainer {
+	margin: 0 auto;
+	width: 70%;
+}
+
+.onlinecontainer {
+	margin: 0 auto;
+	width: 90%; 
+}
+
+#graphiccontainer {
+	margin: 0 auto;
+	width: 55%;
+}
+
+p.text{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14pt;
+	font-weight: 200;
+	line-height: 30px; 
+	margin-top: 1%; 
+}
+
+p.resume{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14pt;
+	font-weight: 200;
+	line-height: 30px; 
+}
+
+p.publication {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 22pt;
+	font-weight: 300;
+	margin-bottom: -0.1em;
+}
+
+i {
+	font-size: 22pt;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+
+i:hover{
+	color: #008F96;
+	cursor: pointer;
+}
+
+a:visited {
+	color:#424242;
+}
+a:hover {
+	color: #008F96;
+}
+
+/*ACCORDION STYLING*/
+div.accordion-content, .ui-accordion-content, .ui-helper-reset, .ui-widget-content, .ui-corner-bottom, .ui-accordion-content-active {
+border: 0px solid #aaaaaa;
+background: #f7f7f7;
+color: #424242;
+height: auto;
+}
+
+h3:hover {
+color: #000eee;
+}
+
+.accordion-content{
+border: 0px solid;
+background: #f7f7f7;
+color: #222222;
+}
+
+.ui-icon {
+display: none;
+text-indent: -99999px;
+overflow: hidden;
+background-repeat: no-repeat;
+}
+
+.ui-state-active .ui-icon {
+background-image: none;
+}
+
+.ui-accordion .ui-accordion-icons {
+padding-left: 0;
+}
+/*! jQuery UI - v1.10.3 - 2013-05-03
+* http://jqueryui.com
+* Includes: jquery.ui.core.css, jquery.ui.accordion.css, jquery.ui.autocomplete.css, jquery.ui.button.css, jquery.ui.datepicker.css, jquery.ui.dialog.css, jquery.ui.menu.css, jquery.ui.progressbar.css, jquery.ui.resizable.css, jquery.ui.selectable.css, jquery.ui.slider.css, jquery.ui.spinner.css, jquery.ui.tabs.css, jquery.ui.tooltip.css
+* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Verdana%2CArial%2Csans-serif&fwDefault=normal&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=cccccc&bgTextureHeader=highlight_soft&bgImgOpacityHeader=75&borderColorHeader=aaaaaa&fcHeader=222222&iconColorHeader=222222&bgColorContent=ffffff&bgTextureContent=flat&bgImgOpacityContent=75&borderColorContent=aaaaaa&fcContent=222222&iconColorContent=222222&bgColorDefault=e6e6e6&bgTextureDefault=glass&bgImgOpacityDefault=75&borderColorDefault=d3d3d3&fcDefault=555555&iconColorDefault=888888&bgColorHover=dadada&bgTextureHover=glass&bgImgOpacityHover=75&borderColorHover=999999&fcHover=212121&iconColorHover=454545&bgColorActive=ffffff&bgTextureActive=glass&bgImgOpacityActive=65&borderColorActive=aaaaaa&fcActive=212121&iconColorActive=454545&bgColorHighlight=fbf9ee&bgTextureHighlight=glass&bgImgOpacityHighlight=55&borderColorHighlight=fcefa1&fcHighlight=363636&iconColorHighlight=2e83ff&bgColorError=fef1ec&bgTextureError=glass&bgImgOpacityError=95&borderColorError=cd0a0a&fcError=cd0a0a&iconColorError=cd0a0a&bgColorOverlay=aaaaaa&bgTextureOverlay=flat&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=aaaaaa&bgTextureShadow=flat&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px
+* Copyright 2013 jQuery Foundation and other contributors Licensed MIT */
+
+/* Layout helpers
+----------------------------------*/
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 1600px) {
+	.imagecontainer {
+		width: 65%;
+	}
+	#graphiccontainer {
+		width: 50%;
+	}
+	.captioncontainer {
+	width: 280px;
+	margin-left: 0px;
+	float: left;
+}
+}
+@media (max-width: 1400px) {
+	.imagecontainer {
+		width: 75%;
+	}
+
+	.captioncontainer {
+	width: 280px;
+	margin-left: 0px;
+	float: left;
+}
+}
+
+@media (max-width: 1360px) {
+	#graphiccontainer {
+		width: 60%;
+	}
+}
+
+@media (max-width: 1280px) {
+	.imagecontainer {
+		width: 80%;
+	}
+
+	#graphiccontainer {
+		width: 62%;
+	}
+
+	.captioncontainer {
+	width: 260px;
+	}
+
+	img.online {
+		width: 14em;
+	}
+}
+
+@media (max-width: 1152px) {
+  p {
+    font-size: 4em; 	
+    margin-top: 5%;
+  }
+
+  #name {
+  	margin-left: 10%;
+  	margin-right: 5%;
+  	width: 75%;
+  }
+
+  p {
+  	margin-top: 3.5%;
+  }
+
+  .imagecontainer {
+  	width: 90%;
+
+  }
+
+  #graphiccontainer {
+  	width: 70%;
+  }
+
+  .captioncontainer {
+  	width: 238px;
+  }
+
+  img.online {
+  	width: 13em;
+  }
+
+  img.wapo {
+  	height: 13em;
+  }
+  }
+
+  @media (max-width: 1080px) {
+  p {
+    font-size: 4em; 	
+    margin-top: 5%;
+  }
+
+  #name {
+  	margin-left: 10%;
+  	margin-right: 5%;
+  	width: 75%;
+  }
+
+  p {
+  	margin-top: 3.5%;
+  }
+
+  .imagecontainer {
+  	width: 80%;
+
+  }
+
+  #patch {
+  	width: 100%;
+  }
+
+  #graphiccontainer {
+  	width: 80%;
+  }
+
+  .captioncontainer {
+  	width: 50%;
+  }
+
+  img.online {
+  	width: 17em;
+  }
+  }
+
+  @media (max-width: 768px) {
+  p {
+    font-size: 3em; 	
+    margin-top: 7%;
+  }	
+
+  img.nbn {
+  	height: 8em;
+  	margin-right: 5px;
+  }
+
+  img.wapo {
+  	width: 12em;
+  	height: 20em;
+  }
+
+  .captioncontainer {
+	margin: 0 auto;
+	width: 50%;
+	}
+
+	img.online {
+		width: 18em;
+	}
+
+  .resume {
+		width: 100%;
+	}
+
+  #name {
+  	margin-left: 5%;
+  	margin-right: 5%;
+  	width: 85%;
+  }
+
+  .imagecontainer {
+  	width: 91%;
+  }
+
+  .onlinecontainer {
+  	width: 100%;
+  }
+
+  #graphiccontainer {
+  	width: 100%;
+  }
+
+}
+
+@media (max-width: 767px) {
+	.captioncontainer {
+	margin: 0 auto;
+	width: 50%;
+	}
+
+	img.online {
+		width: 16em;
+	}
+
+}
+
+@media (max-width: 650px) {
+		img.wapo {
+		width: 90%;
+		height: auto;
+	}
+
+		img.nbn {
+			width: 45%;
+			height: auto;
+		}
+}
+
+@media (max-width: 550px) {
+	#patch {
+		width: 100%;
+	}
+
+}  
+@media (max-width: 480px) {	
+
+  p {
+    font-size: 2.7em; 	
+    margin-top: 5%;
+  }
+
+  #name {
+  	margin-left: 5%;
+  	margin-right: 5%;
+  	width: 85%;
+  }
+img.nbn {
+  	width: 90%;
+  	height: auto
+  }
+
+.captioncontainer {
+	margin: 15px;
+	width: 75%;
+}
+
+ }
+
+@media (max-width: 400px) {
+
+img.online {
+	margin-left: 1em;
+	}
+
+.imagecontainer {
+	width: 100%;
+}
+
+ .captioncontainer {
+	margin-left: 0;
+	}
+ }
+
+@media (max-width: 350px) {
+	img {
+		margin: 0 auto;
+	}
+
+img.online {
+		width: 14em;
+	}
+ img.wapo {
+  	height: 23em;
+  	width: 13em;
+  }
+  .captioncontainer {
+  	width: 260px;
+  	margin-left: -1em;
+  }
+
+}
+
