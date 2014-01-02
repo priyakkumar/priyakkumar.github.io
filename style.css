@@ -372,7 +372,7 @@ img.online {
  }
 }
 
-@media screen and (max-width: 350px) {
+@media screen (max-width: 320px) {
 	img {
 		margin: 0 auto;
 	}
