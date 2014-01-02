@@ -141,7 +141,7 @@ body:after {
   margin: 0 auto;
   padding-top: 5px;
   *zoom: 1;
-  width: 120%;
+  width: 100%;
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-radius: 4px;
   border-bottom-left-radius: 4px;
