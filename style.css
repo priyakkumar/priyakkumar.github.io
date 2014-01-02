@@ -29,6 +29,10 @@ position: absolute;
 background-color: #f7f7f7;
 }
 
+#panel {
+	width: 30%;
+	height: auto;
+}
 .resume {
 	width: 68%;
 	margin: 0 auto;
@@ -260,10 +264,6 @@ padding-left: 0;
   	width: 100%;
   }
 
-  #graphiccontainer {
-  	width: 80%;
-  }
-
   .captioncontainer {
   	width: 50%;
   }
@@ -360,6 +360,7 @@ img.nbn {
 
 img.online {
 	margin-left: 0em;
+	width: 100%;
 	}
 
 .imagecontainer {
@@ -381,8 +382,7 @@ img.online {
   	width: 13em;
   }
   .captioncontainer {
-  	width: 260px;
-  	margin-left: -1em;
+  	width: 100%;
   }
 
 }
