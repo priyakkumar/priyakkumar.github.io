@@ -29,9 +29,12 @@ position: absolute;
 background-color: #f7f7f7;
 }
 
-#panel {
+.panel {
 	width: 30%;
 	height: auto;
+	margin-right: 1%;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
 }
 .resume {
 	width: 68%;
@@ -181,7 +184,7 @@ padding-left: 0;
 		width: 65%;
 	}
 	#graphiccontainer {
-		width: 50%;
+		width: 60%;
 	}
 }
 @media (max-width: 1400px) {
@@ -191,19 +194,10 @@ padding-left: 0;
 
 }
 
-@media (max-width: 1360px) {
-	#graphiccontainer {
-		width: 60%;
-	}
-}
 
 @media (max-width: 1280px) {
 	.imagecontainer {
 		width: 80%;
-	}
-
-	#graphiccontainer {
-		width: 62%;
 	}
 
 }
@@ -230,7 +224,7 @@ padding-left: 0;
   }
 
   #graphiccontainer {
-  	width: 70%;
+  	width: 60%;
   }
 
 
@@ -370,7 +364,13 @@ img.online {
  .captioncontainer {
 	margin-left: 0;
 	}
+
+.panel {
+	width: 90%;
+	height: auto;
+	margin 0 auto;
  }
+}
 
 @media screen and (max-width: 350px) {
 	img {
