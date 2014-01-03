@@ -73,8 +73,8 @@ img.nbn {
 }
 
 img.wapo {
-	height: 16em;
-	margin-right: 15px;
+	width: 18%;
+	margin-right: 1%;
 	border: 1px solid #ccc;
 	margin-bottom: 10px;
 }
@@ -235,10 +235,6 @@ padding-left: 0;
   	width: 60%;
   }
 
-
-  img.wapo {
-  	height: 13em;
-  }
   }
 
   @media (max-width: 1080px) {
@@ -278,10 +274,10 @@ padding-left: 0;
     margin-top: 7%;
   }	
 
-  img.nbn {
-  	height: 8em;
+  /*img.nbn {
+  	height: 50%;
   	margin-right: 5px;
-  }
+  }*/
 
   img.wapo {
   	width: 12em;
@@ -312,15 +308,8 @@ padding-left: 0;
 
 }
 
-@media (max-width: 767px) {
-
-}
 
 @media (max-width: 650px) {
-		img.wapo {
-		width: 90%;
-		height: auto;
-	}
 
 		img.nbn {
 			width: 45%;
