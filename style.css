@@ -64,14 +64,29 @@ p.header:hover{
 	color: #008F96;
 }
 
+img {
+	margin-bottom: 1%;
+}
+
 img.nbn {
-	height: 12em;
-	margin-right: 15px;
+	width: 22%;
+	margin-right: 1%;
 	border: 1px solid #ccc;
 	margin-bottom: 10px;
 	display: inline-block;
 }
 
+img.patch {
+	height: 13em;
+	margin-right: 1%;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+img.musac {
+	width: 30%;
+	margin-bottom: 10px;
+}
 img.wapo {
 	width: 18%;
 	margin-right: 1%;
@@ -195,9 +210,12 @@ padding-left: 0;
 		width: 60%;
 	}
 }
-@media (max-width: 1400px) {
+@media (max-width: 1420px) {
 	.imagecontainer {
 		width: 75%;
+	}
+	img.patch {
+		height: 12em;
 	}
 
 }
@@ -206,6 +224,9 @@ padding-left: 0;
 @media (max-width: 1280px) {
 	.imagecontainer {
 		width: 80%;
+	}
+	img.patch {
+		height: 11em;
 	}
 
 }
@@ -254,7 +275,7 @@ padding-left: 0;
   }
 
   .imagecontainer {
-  	width: 80%;
+  	width: 100%;
 
   }
 
@@ -262,12 +283,41 @@ padding-left: 0;
   	width: 100%;
   }
 
+img.patch {
+	height: 13.5em;
+}
   .captioncontainer {
   	width: 50%;
   }
+}
+
+@media (max-width: 1060px) {
+	img.patch {
+		height: 12.5em;
+	}
 
   }
 
+@media (max-width: 989px) {
+	img.patch {
+		height: 11.5em;
+	}
+
+  }
+
+ @media (max-width: 927px) {
+ 	img.patch {
+ 		height: 10em;
+ 	}
+
+  }
+
+@media (max-width: 811px) {
+ 	img.patch {
+ 		height: 9em;
+ 	}
+
+  }
   @media (max-width: 768px) {
   p {
     font-size: 3em; 	
@@ -280,8 +330,8 @@ padding-left: 0;
   }*/
 
   img.wapo {
-  	width: 12em;
-  	height: 20em;
+  	width: 30%;
+  	height: auto;
   }
 
   .resume {
@@ -306,20 +356,44 @@ padding-left: 0;
   	width: 100%;
   }
 
+  img.patch {
+  	height: 8em;
+  }
+
 }
 
 
 @media (max-width: 650px) {
 
-		img.nbn {
+
+		img.wapo {
 			width: 45%;
-			height: auto;
+		}
+
+		img.patch {
+			height: 7em;
+		}
+}
+
+@media (max-width: 650px) {
+
+		img.patch {
+			height: 6em;
 		}
 }
 
 @media (max-width: 550px) {
 	#patch {
 		width: 100%;
+	}
+
+	img.musac {
+	width: 100%;
+	}
+
+	img.patch {
+		width: 100%;
+		height: auto;
 	}
 
 }  
@@ -336,10 +410,9 @@ padding-left: 0;
   	width: 85%;
   }
 img.nbn {
-  	width: 90%;
+  	width: 45%;
   	height: auto
   }
-
 .captioncontainer {
 	margin: 15px;
 	width: 80%;
@@ -358,14 +431,22 @@ img.online {
 	width: 100%;
 }
 
- .captioncontainer {
+img.wapo {
+	width: 100%;
+}
+
+.captioncontainer {
 	margin-left: 0;
 	}
 
 .panel {
 	width: 90%;
 	height: auto;
-	margin 0 auto;
+	margin: 0 auto;
+ }
+
+ img.nbn {
+ 	width: 100%
  }
 }
 
@@ -374,10 +455,6 @@ img.online {
 		margin: 0 auto;
 	}
 
- img.wapo {
-  	height: 23em;
-  	width: 13em;
-  }
   .captioncontainer {
   	width: 100%;
   }
