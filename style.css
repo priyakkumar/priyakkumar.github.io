@@ -108,9 +108,9 @@ img:hover{
 	width: 70%;
 }
 
-.onlinecontainer {
+#onlinecontainer {
 	margin: 0 auto;
-	width: 90%; 
+	width: 100%; 
 }
 
 #graphiccontainer {
@@ -348,7 +348,7 @@ img.patch {
   	width: 91%;
   }
 
-  .onlinecontainer {
+  #onlinecontainer {
   	width: 100%;
   }
 
@@ -437,6 +437,7 @@ img.wapo {
 
 .captioncontainer {
 	margin-left: 0;
+	width: 100%;
 	}
 
 .panel {
@@ -454,10 +455,6 @@ img.wapo {
 	img {
 		margin: 0 auto;
 	}
-
-  .captioncontainer {
-  	width: 100%;
-  }
 
 }
 
