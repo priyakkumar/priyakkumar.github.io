@@ -1,0 +1,53 @@
+h1 {
+	font-family: 'Bitter', serif;
+	font-weight: 700;
+	font-size: 3em;
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+p, td.rtAlign {
+	font-family: 'Bitter', serif;
+	font-weight: 400;
+	margin: 0 auto;
+	text-align: center;
+}
+
+body {
+	background-color: #fafafa;
+}
+
+input {
+width: 34em;
+height: 2em;
+margin-bottom: 1em;
+font: -webkit-control;
+
+}
+
+tr {
+	text-align: center;
+}
+
+table {
+	margin: 0 auto;
+}
+
+p {
+	margin-top: 2em;
+	line-height: 2em;
+}
+
+footer {
+position: absolute;
+bottom: 0px;
+left: 20%;
+right: 20%;
+}
+
+@media (max-width: 400px) {
+	input {
+		width: 20em;
+	}
+}
