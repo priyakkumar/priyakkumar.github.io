@@ -1,8 +1,11 @@
 window.onload = initAll;
 
 function initAll() {
+    document.getElementById("fName").focus();
     document.getElementById("cumbersubmit").onclick = function() {
         document.getElementById("msgField").innerHTML = getCumberName();
+        $( "div.tryAgain" ).html( "<p><a href='#' onclick='selectNameBox();'>Try another name.</a></p>" );
+        $( "div.img" ).html( "<img src='cumber-1.png'/>" );
         return false;
     }
 }
@@ -16,7 +19,7 @@ function getCumberName() {
     //                  "Twinkle", "Star", "Halo", "Angel"];
     
     var lastName1 = ["Cucumber", "Cubic", "Curdle", "Crumble", "Crunchy", "Cucumber", "Captain", "Cubic", "Crumble", "Cuddle", "Cosby", "Candy", "Cloister", "Cottage", "Curry", "Crusty", "Cowboy", "Cuttle", "Cubbage", "Clamber", "Cashew", "Cumber", "Cumin", "Curly", "Cabbage", "Cutlet", ];
-    var lastName2 = ["blender", "buns" , "kisser", "brains", "fart", "shirt", "burp", "slop", "nose", "bubble", "bebop", "muffin", "pants", "snatch", "sprinkles","sea", "doodle", "boodle", "bottom", "cabbage", "fish", "fanny", "crunchy", "sniff", "snarf", "cheese"];
+    var lastName2 = ["blender", "buns" , "kisser", "brains", "fart", "shirt", "burp", "slop", "nose", "bubble", "bebop", "muffin", "pants", "patch", "sprinkles","sea", "doodle", "boodle", "bottom", "cabbage", "fish", "fanny", "crunchy", "sniff", "snarf", "cheese"];
     
     var firstNm = document.getElementById("fName").value.toUpperCase();
     // var middleNm = document.getElementById("mName").value.toUpperCase();
@@ -60,5 +63,17 @@ function getCumberName() {
     }
     
     return "My Benedict Cumberbatch name is " + firstName1[firstNum1]
-    + "" + firstName2[firstNum2] + " " + lastName1[lastNum1] + "" + lastName2[lastNum2] + "."
+    + "" + firstName2[firstNum2] + " " + lastName1[lastNum1] + "" + lastName2[lastNum2] + ".";
+
+ 
 }
+
+function selectNameBox() {
+    window.location = '#';
+    document.getElementById("fName").focus();
+    document.getElementById("fName").select();
+    document.getElementById("fName").value = '';
+    document.getElementById("lName").value = '';
+
+}
+

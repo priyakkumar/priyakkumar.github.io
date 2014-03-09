@@ -21,10 +21,16 @@ body {
 input {
 width: 34em;
 height: 2em;
-margin-bottom: 1em;
-font: -webkit-control;
-
+display: block;
+margin: 0 auto;
 }
+
+img {
+	width: 250px;
+	display: block;
+    margin: 2em auto 2em auto;
+}
+
 
 tr {
 	text-align: center;
@@ -35,8 +41,7 @@ table {
 }
 
 p {
-	margin-top: 2em;
-	line-height: 2em;
+	line-height: 1.3em;
 }
 
 footer {
@@ -46,8 +51,28 @@ left: 20%;
 right: 20%;
 }
 
+.tryanother {
+	cursor: pointer;
+}
+
+a {
+	color: #4F4F4F;
+}
+
+a:visited {
+	color: #7A7A7A;
+}
+
+p#msgField {
+	margin-top: 2em;
+}
+
+
 @media (max-width: 400px) {
 	input {
 		width: 20em;
+	}
+	h1 {
+		font-size: 2em;
 	}
 }
