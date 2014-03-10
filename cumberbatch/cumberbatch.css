@@ -72,7 +72,11 @@ p#msgField {
 	input {
 		width: 17em;
 	}
-
+	h1 {
+		font-size: 1.5em;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
 
 	footer {
 		display: none;
