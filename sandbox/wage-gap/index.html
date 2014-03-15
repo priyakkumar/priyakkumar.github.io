@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Map</title>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+        <link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+        <script type ="text/javascript" src="newjson.js"></script>
+        <style>
+
+        	body {
+        		background-color: #fafafa;
+        	}
+        	#map { 
+        		height: 600px; 
+        		width: 900px;
+        		margin: 0 auto;
+        		border: 5px solid #ccc;
+        	}
+
+        	.info {
+			    padding: 6px 8px;
+			    font: 14px/16px Arial, Helvetica, sans-serif;
+			    background: white;
+			    background: rgba(255,255,255,0.9);
+			    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+			    border-radius: 3px;
+			    width: 160px;
+				}
+			.info h4 {
+			    margin: 5px 0 5px;
+			    color: black;
+			}
+
+			p {
+				font-family: 'Helvetica', sans-serif;
+				font-size: 12px;
+			}
+
+			h3 {
+				font-family: 'News Cycle', sans-serif;
+				font-weight: 700;
+				font-size: 30px;
+				text-align: center; 
+				margin-bottom: 0px;
+			}
+
+			p.text {
+				font-size: 16px;
+				font-family: 'News Cycle', sans-serif;
+				font-weight: 400;
+				text-align: center;
+				margin-bottom: 25px;
+			}
+
+			.ratio {
+				border-bottom: 1px #ccc solid;
+			}
+
+			.median {
+				margin-top: -15px;
+			}
+
+			.legend {
+    		line-height: 18px;
+    		color: #555;
+    		width: 100px;
+			}
+
+			.legend i {
+			    width: 18px;
+			    height: 18px;
+			    float: left;
+			    margin-right: 8px;
+			    opacity: 0.7;
+			}
+        </style>
+    </head>
+<body>
+	<h3>What's the wage gap in each state?</h3>
+	<p class="text"> I wanted to get familiar with Leaflet, so I used this dataset <a href="http://www.aauw.org/files/2013/04/Pay-Gap-by-State-Fall-2013.png" target ="_blank">(courtesy of Vox/AAUW)</a> to create a choropleth map illustrating the pay gap between men and women in each state.</p>
+    <div id="map"></div>
+</body>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+<script type ="text/javascript" src="newjson.js"></script>
+<script type="text/javascript">
+        var map = L.map('map').setView([37.8, -96], 4);
+		var cloudmade = L.tileLayer('http://{s}.tile.cloudmade.com/{key}/{styleId}/256/{z}/{x}/{y}.png', {
+			attribution: 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2011 CloudMade',
+			key: 'BC9A493B41014CAABB98F0471D759707',
+			styleId: 22677
+		}).addTo(map);
+		function getColor(d) {
+			return d > 90 ? '#ece7f2' :
+			       d > 85  ? '#d0d1e6' :
+			       d > 80  ? '#a6bddb' :
+			       d > 75  ? '#74a9cf' :
+			       d > 70   ? '#3690c0' :
+			       d > 65   ? '#0570b0' :
+			       d > 60   ? '#034e7b' :
+			                  '#fafafa';
+		}
+
+		function style(feature) {
+		    return {
+		        fillColor: getColor(feature.properties.ratio),
+		        weight: 1,
+		        opacity: 1,
+		        color: 'white', 
+		        fillOpacity: 0.7,
+		    };
+		}
+
+		L.geoJson(statesData, {style: style}).addTo(map);
+
+		function highlightFeature(e) {
+		    var layer = e.target;
+
+		    layer.setStyle({
+		        weight: 2.5,
+		        color: '#666',
+		        dashArray: '',
+		        fillOpacity: 0.7,
+		    });
+
+		    if (!L.Browser.ie && !L.Browser.opera) {
+		        layer.bringToFront();
+		    }
+
+		    info.update(layer.feature.properties);
+		}
+
+
+		var geojson;
+
+		function resetHighlight(e) {
+		    geojson.resetStyle(e.target);
+		    info.update();
+		}
+
+		function zoomToFeature(e) {
+    	map.fitBounds(e.target.getBounds());
+		}
+
+		function onEachFeature(feature, layer) {
+		    layer.on({
+		        mouseover: highlightFeature,
+		        mouseout: resetHighlight,
+		        click: zoomToFeature
+		    });
+		}
+
+		geojson = L.geoJson(statesData, {
+		    style: style,
+		    onEachFeature: onEachFeature
+		}).addTo(map);
+
+		var info = L.control();
+
+		info.onAdd = function (map) {
+		    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+		    this.update();
+		    return this._div;
+		};
+
+		// method that we will use to update the control based on feature properties passed
+		info.update = function (props) {
+		    this._div.innerHTML = '<h4><b>The Gender Gap Ratio</b></h4>' +  (props ?
+		        '<div class="ratio"><p> On average, women in <b>' + props.name + ' </b>earn <b>' + props.ratio + '%</b> of what men earn. </div></br><div class="median"><p>Median yearly income for men: <b>$' + props.men + ' </b></br></br> Median yearly income for women: <b>$' + props.women + '</b></p></div>'
+		        : '<p>Hover over a state</p>');
+		};
+
+info.addTo(map);
+	
+	var legend = L.control({position: 'bottomright'});
+
+		legend.onAdd = function (map) {
+
+    	var div = L.DomUtil.create('div', 'info legend'),
+        grades = [60, 65, 70, 75, 80, 85, 90],
+        labels = [];
+
+    // loop through our density intervals and generate a label with a colored square for each interval
+    	for (var i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+            grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+    	}
+
+    return div;
+};
+
+legend.addTo(map);
+</script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Pupfeed</title>
+        <script type="text/javascript" src="instafeed.min.js"></script>
+        <script type="text/javascript">
+		    var feed = new Instafeed({
+		        get: 'tagged',
+		        tagName: 'corgi',
+		        clientId: '8c25d59864484eb3941f11eea2aed7fc',
+		        template: '<a href="{{link}}" target ="_blank"><img src="{{image}}" /></a>',
+		        limit: '32',
+		        resolution: 'low_resolution',
+		        sortBy: 'most-liked',
+		    });
+		    feed.run();
+		</script>
+	<style>
+
+	h4 {
+		font-family: 'Helvetica',sans-serif;
+		margin-left: 0.3em;
+		margin-bottom: 0em;
+		font-size: 3em;
+		margin-top: 0.7em;
+	}
+
+	p {
+		font-family: 'Helvetica', sans-serif;
+		margin-left: 1em;
+		font-size: 0.9em;
+	}
+	body {
+		background-color: #fafafa;
+	}
+	#instafeed {
+		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+	}
+
+	img {
+		margin: 1em 1em 1em 1em; 
+		border: 8px solid #ccc;
+	}
+
+	img:hover {
+		opacity: 0.6;
+	}
+
+	</style>
+    </head>
+    <body>
+    <h4>Pupfeed</h4>
+    <p>Here are the 30 most-liked pictures of Corgis at any given time on Instagram...because we all need more pups in our lives, and I wanted to scratch the surface of learning about APIs.</p>
+    <div id="instafeed"></div>
+    </body>
+
+</html>
