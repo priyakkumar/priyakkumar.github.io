@@ -124,7 +124,7 @@ span.sandbox {
 }
 
 p.text{
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'ff-enzo-web', sans-serif;
 	font-size: 14pt;
 	font-weight: 300;
 	line-height: 30px; 
@@ -132,14 +132,14 @@ p.text{
 }
 
 p.resume{
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'ff-enzo-web', sans-serif;
 	font-size: 14pt;
 	font-weight: 200;
 	line-height: 30px; 
 }
 
 p.publication {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'ff-enzo-web', sans-serif;
 	font-size: 22pt;
 	font-weight: 300;
 	margin-bottom: -0.1em;
