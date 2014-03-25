@@ -3,9 +3,10 @@ body {
 }
 
 .wrapper {
-	background-image: url("img/bg.jpg");
+	background-color: #96D6D9;
+	/*url("img/bg.jpg");/*
 	/*position: absolute;*/
-	height: 200px;
+	height: 130px;
 	top: 0;
 	list-style-type: none;
 	width: 101%;
@@ -20,13 +21,12 @@ body {
 	float: left;
 }
 #name {
-height: 134px;
-margin-top: 35px;
+height: 10%;
 width: 60%;
 margin-left: 20%;
 margin-right: 15%;
 position: absolute;
-background-color: #f7f7f7;
+background-color: #96D6D9;
 }
 
 @font-face {
@@ -60,8 +60,13 @@ padding-left: 2%;
 padding-right: 2%;
 }
 
+p.title {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 100;
+	color: #fff;
+}
 p.header:hover{
-	color: #008F96;
+	color: #96D6D9;
 }
 
 img {
@@ -153,7 +158,7 @@ i {
 }
 
 i:hover{
-	color: #008F96;
+	color: #96D6D9;
 	cursor: pointer;
 }
 
@@ -165,6 +170,10 @@ a:hover {
 }
 
 /*ACCORDION STYLING*/
+
+#accordion {
+	margin-top: 10px;
+}
 div.accordion-content, .ui-accordion-content, .ui-helper-reset, .ui-widget-content, .ui-corner-bottom, .ui-accordion-content-active {
 border: 0px solid #aaaaaa;
 background: #f7f7f7;
