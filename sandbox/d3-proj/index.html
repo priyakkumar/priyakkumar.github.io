@@ -1,0 +1,28 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3 Page Template</title>
+        <script type="text/javascript" src="d3/d3.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+        var dataset;
+        d3.csv("pertussis.csv", function(data) {
+            console.log(data);
+             dataset = data;    //Once loaded, copy to dataset.
+                // generateVis();     //Then call other functions that
+                // hideLoadingMsg();  //depend on data being present.
+            });
+
+        d3.select("body").selectAll("div")
+        .data(dataset)
+        .enter()
+        .append("div")
+        .attr("class", "bar")
+        .style("height", function(d) {
+            var barHeight = d * 5;
+            return barHeight + "px";
+        });
+        </script>
+    </body>
+</html>
