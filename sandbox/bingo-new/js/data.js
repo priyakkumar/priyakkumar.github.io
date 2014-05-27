@@ -2,7 +2,7 @@
 var headerText = "Dillo Day Bingo";
 var introText = "You probably don't need much to spice up your Dillo Day experience. It's already going to be a crazy, fantastic, otherworldly experience full of a type of debauchery you won't ever otherwise see at Northwestern. But perhaps the endless alcohol consumption and sweaty moshing on the Lakefill doesn't excite you to the same level that it does for the rest of the student body. THIS IS VERY LONG";
 
-var winText = "You win!";
+var winText = "<p>You win!</p>";
 
 var JSONBingo = {"squares": [
         {"square": "Keg stand for 30 seconds or longer"},
