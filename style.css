@@ -539,9 +539,6 @@ img.wapo {
 	margin: 0 auto;
  }
 
- img.nbn {
- 	width: 100%
- }
 }
 
 @media screen (max-width: 320px) {
