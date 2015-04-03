@@ -8,7 +8,7 @@ body {
 	    width: 100%;
   float: left;
   height: 55px;
-  background-color: #92EF36;
+  background-color: #AACD4B;
   margin-bottom: 35px;
   position: absolute;
   top: 0;
@@ -24,7 +24,7 @@ p.name{
   font-weight: 300;
 }
 .wrapper {
-	background-color: #92EF36;
+	background-color: #AACD4B;
 	height: 130px;
 	top: 0;
 	list-style-type: none;
@@ -52,7 +52,7 @@ width: 60%;
 margin-left: 20%;
 margin-right: 15%;
 position: absolute;
-background-color: #92EF36;
+background-color: #AACD4B;
 }
 
 @font-face {
@@ -91,7 +91,7 @@ p.title {
 	color: #fff;
 }
 p.header:hover{
-	color: #92EF36;
+	color: #AACD4B;
 }
 
 img {
@@ -229,17 +229,17 @@ i {
 	text-align: center;
 }
 i:hover{
-	color: #92EF36;
+	color: #AACD4B;
 	cursor: pointer;
 }
 a{
 	text-decoration: none;
 }
 a:hover {
-	color: #92EF36!important;
+	color: #AACD4B!important;
 }
 .captioncontainer p:hover {
-	color: #92EF36!important;
+	color: #AACD4B!important;
 }
 a:visited {
 	color:#424242;
