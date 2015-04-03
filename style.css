@@ -360,7 +360,7 @@ padding-left: 0;
 
   @media (max-width: 1080px) {
   p {
-    font-size: 4em; 	
+    font-size: 2em; 	
     margin-top: 5%;
   }
 
@@ -421,7 +421,7 @@ img.patch {
   }
   @media (max-width: 768px) {
   p {
-    font-size: 3em; 	
+    font-size: 2em; 	
     margin-top: 7%;
   }	
 
