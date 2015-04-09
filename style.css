@@ -302,7 +302,11 @@ padding-left: 0;
 
 /*MEDIA QUERIES*/
 
-@media (min-width: 1600px) {
+@media (max-width: 2600px) {
+	body {
+		width: 70%;
+
+	}
 	.imagecontainer {
 		width: 65%;
 	}
