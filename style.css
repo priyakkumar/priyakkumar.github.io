@@ -1,12 +1,9 @@
-body {
-	background-color: #fafafa;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
+
+body{
+	margin: 0 auto!important;
 }
 .topbar{
-	    width: 100%;
-  float: left;
+width: 100%;
   height: 55px;
   background-color: #AACD4B;
   margin-bottom: 35px;
@@ -16,44 +13,41 @@ body {
 }
 a.resume, a.resume:visited{
 	color: #AACD4B;
+	text-decoration: none;
 }
 p.name{
 	text-align: center;
-  line-height: 2px;
-  color: #fff;
-  font-weight: 300;
+    line-height: 2px;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 22px;
 }
-.wrapper {
-	background-color: #AACD4B;
-	height: 130px;
-	top: 0;
-	list-style-type: none;
-	width: 101%;
-/*	text-align: center;
-*/	margin-top: -10px;
-	margin-left: -10px;
-	padding-right: 10px;
-}
+
 #about{
 	margin-top: 90px;
 }
-.captioncontainer {
-	width: 25%;
-	margin-top: 0px;
-	float: left;
+img{
+	width: 95%;
 	margin-bottom: 20px;
 }
-.large{
-	width: 50%;
+.captioncontainer {
+	margin-bottom: 20px;
 }
-
+/*.large{
+	width: 50%;
+}*/
+.wapo{
+	width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
 #name {
-height: 10%;
-width: 60%;
-margin-left: 20%;
-margin-right: 15%;
-position: absolute;
-background-color: #AACD4B;
+	height: 10%;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 15%;
+	position: absolute;
+	background-color: #AACD4B;
 }
 
 @font-face {
@@ -74,18 +68,13 @@ background-color: #AACD4B;
 
 
 p {
-font-family: 'Source Sans Pro', sans-serif;
-font-size: 2em;
-margin-top: 1.6%;
-color: #424242;
-text-transform: none;
-text-align: left;
-padding-left: 2%;
-padding-right: 2%;
-}
-p.header{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2em;
+	margin-top: 1.6%;
+	color: #424242;
 	text-align: center;
 }
+
 p.title {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 100;
@@ -95,74 +84,35 @@ p.header:hover{
 	color: #AACD4B;
 }
 
-img {
-	margin-bottom: 1%;
-}
-
 img.nbn {
-	width: 22%;
-	margin-right: 1%;
-	border: 1px solid #ccc;
-	margin-bottom: 10px;
-	display: inline-block;
-}
-
-img.patch {
-	height: 13em;
-	margin-right: 1%;
-	border: 1px solid #ccc;
-	margin-bottom: 10px;
-	display: inline-block;
-}
-img.musac {
-	width: 30%;
-	margin-bottom: 10px;
-}
-img.wapo {
-	width: 18%;
-	margin-right: 1%;
-	border: 1px solid #ccc;
-	margin-bottom: 10px;
+    /* margin-right: 1%; */
+    border: 1px solid #ccc;
+    margin-bottom: 19px;
 }
 
 img.online {
-	width: 95%;
 	border: 1px solid #d6d6d6;
 }
 
 img:hover{
 	opacity: 0.7;
 }
-span.sandbox {
-	font-size: 0.8em;
-}
 
-.imagecontainer {
-	margin: 0 auto;
-	width: 90%;
-}
-
-#onlinecontainer {
+.onlinebox{
+	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 15px;
-	width: 90%; 
-}
-
-#graphiccontainer {
-	margin: 0 auto;
-	width: 70%;
 }
 .pubcontainer{
 	clear: both;
 }
 .captioncontainer p{
-	  font-size: 14pt;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
-  margin-top: 4px;
-  margin-left: -20px;
+	font-size: 14pt;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	margin-top: 4px;
+	margin-left: -20px;
 
 }
 p.text{
@@ -177,13 +127,12 @@ p.text{
 
 .resume {
 	width: 80%;
-	
 	margin-left: auto;
 	margin-right: auto;
 }
 .resume p.publication{
-	  text-align: left;
-  width: 100%;
+	text-align: left;
+   width: 100%;
 }
 
 .resume p{
@@ -204,37 +153,31 @@ p.resume-date{
   margin: 1em 0em 3em 0em;
 }
 p.publication {
-  text-align: center;
-/*  border-bottom: 2px solid #A2F452;
-*/  width: 60%;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 21pt;
-  padding-bottom: 3px;
-  font-weight: 300;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
+	text-align: center;
+	width: 60%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 21pt;
+	padding-bottom: 3px;
+	font-weight: 300;
+	margin: 20px auto;
 }
 .divider{
-width: 30%;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: 2px dashed #A2F452;
+	clear: both;
+	width: 80%;
+	margin: 20px auto 0px auto;
+	border-bottom: 2px dashed #A2F452;
 }
 i {
 	font-size: 22pt;
-	margin-top: 15px;
 	margin-right: 10px;
 	color: #606060;
-	margin-top: 10px;
-	  margin-top: 30px;
-  margin-bottom: 12px;
+	margin-top: 30px;
+	margin-bottom: 12px;
 }
-#graphic .imagecontainer{
-	width: 80%;
-	text-align: center;
+.graphic{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
 }
 i:hover{
 	color: #AACD4B;
@@ -243,7 +186,7 @@ i:hover{
 a{
 	text-decoration: none;
 }
-a:hover {
+a:hover, a:visited {
 	color: #AACD4B!important;
 }
 .captioncontainer p:hover {
@@ -254,43 +197,8 @@ a:visited {
 	text-decoration: none;
 }
 
-
 /*ACCORDION STYLING*/
 
-#accordion {
-	margin-top: 10px;
-}
-div.accordion-content, .ui-accordion-content, .ui-helper-reset, .ui-widget-content, .ui-corner-bottom, .ui-accordion-content-active {
-border: 0px solid #aaaaaa;
-background: #f7f7f7;
-color: #424242;
-height: auto;
-}
-
-h3:hover {
-color: #000eee;
-}
-
-.accordion-content{
-border: 0px solid;
-background: #f7f7f7;
-color: #222222;
-}
-
-.ui-icon {
-display: none;
-text-indent: -99999px;
-overflow: hidden;
-background-repeat: no-repeat;
-}
-
-.ui-state-active .ui-icon {
-background-image: none;
-}
-
-.ui-accordion .ui-accordion-icons {
-padding-left: 0;
-}
 /*! jQuery UI - v1.10.3 - 2013-05-03
 * http://jqueryui.com
 * Includes: jquery.ui.core.css, jquery.ui.accordion.css, jquery.ui.autocomplete.css, jquery.ui.button.css, jquery.ui.datepicker.css, jquery.ui.dialog.css, jquery.ui.menu.css, jquery.ui.progressbar.css, jquery.ui.resizable.css, jquery.ui.selectable.css, jquery.ui.slider.css, jquery.ui.spinner.css, jquery.ui.tabs.css, jquery.ui.tooltip.css
@@ -301,39 +209,6 @@ padding-left: 0;
 ----------------------------------*/
 
 /*MEDIA QUERIES*/
-
-@media (max-width: 2600px) {
-	body {
-		width: 70%;
-
-	}
-	.imagecontainer {
-		width: 65%;
-	}
-	#graphiccontainer {
-		width: 60%;
-	}
-}
-@media (max-width: 1420px) {
-	.imagecontainer {
-		width: 75%;
-	}
-	img.patch {
-		height: 12em;
-	}
-
-}
-
-
-@media (max-width: 1280px) {
-	.imagecontainer {
-		width: 80%;
-	}
-	img.patch {
-		height: 11em;
-	}
-
-}
 
 @media (max-width: 1152px) {
   p {
@@ -351,16 +226,7 @@ padding-left: 0;
   	margin-top: 3.5%;
   }
 
-  .imagecontainer {
-  	width: 90%;
-
-  }
-
-  #graphiccontainer {
-  	width: 60%;
-  }
-
-  }
+}
 
   @media (max-width: 1080px) {
   p {
@@ -373,56 +239,13 @@ padding-left: 0;
   	margin-right: 5%;
   	width: 75%;
   }
-
-  p {
-  	margin-top: 3.5%;
-  }
-
-  .imagecontainer {
-  	width: 100%;
-
-  }
-
-  #patch {
-  	width: 100%;
-  }
-
-img.patch {
-	height: 13.5em;
-}
-  .captioncontainer {
-  	width: 50%;
-
-  }
+  .onlinebox{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	}
 }
 
-@media (max-width: 1060px) {
-	img.patch {
-		height: 12.5em;
-	}
-
-  }
-
-@media (max-width: 989px) {
-	img.patch {
-		height: 11.5em;
-	}
-
-  }
-
- @media (max-width: 927px) {
- 	img.patch {
- 		height: 10em;
- 	}
-
-  }
-
-@media (max-width: 811px) {
- 	img.patch {
- 		height: 9em;
- 	}
-
-  }
   @media (max-width: 768px) {
   p {
     font-size: 2em; 	
@@ -434,11 +257,6 @@ img.patch {
   	margin-right: 5px;
   }*/
 
-  img.wapo {
-  	width: 30%;
-  	height: auto;
-  }
-
   .resume {
 		width: 100%;
 	}
@@ -449,59 +267,12 @@ img.patch {
   	width: 85%;
   }
 
-  .imagecontainer {
-  	width: 91%;
-  }
-
   #onlinecontainer {
   	width: 100%;
   }
 
-  #graphiccontainer {
-  	width: 100%;
-  }
-
-  img.patch {
-  	height: 8em;
-  }
-
 }
-
-
-@media (max-width: 650px) {
-
-
-		img.wapo {
-			width: 45%;
-		}
-
-		img.patch {
-			height: 7em;
-		}
-}
-
-@media (max-width: 650px) {
-
-		img.patch {
-			height: 6em;
-		}
-}
-
-@media (max-width: 550px) {
-	#patch {
-		width: 100%;
-	}
-
-	img.musac {
-	width: 100%;
-	}
-
-	img.patch {
-		width: 100%;
-		height: auto;
-	}
-
-}  
+ 
 @media (max-width: 480px) {	
 
   p {
@@ -514,14 +285,6 @@ img.patch {
   	margin-right: 5%;
   	width: 85%;
   }
-img.nbn {
-  	width: 45%;
-  	height: auto
-  }
-.captioncontainer {
-	margin: 15px;
-	width: 80%;
-}
 
  }
 
@@ -529,14 +292,6 @@ img.nbn {
 
 img.online {
 	margin-left: 0em;
-	width: 100%;
-	}
-
-.imagecontainer {
-	width: 100%;
-}
-
-img.wapo {
 	width: 100%;
 }
 
