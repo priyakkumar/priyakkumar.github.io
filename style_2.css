@@ -11,6 +11,11 @@ body{
   top: 0;
   left: 0;
 }
+h2{
+  text-align: center!important;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 25px;
+}
 a.resume, a.resume:visited{
   color: #333;
   text-decoration: none;
@@ -27,7 +32,7 @@ p.name{
   margin-top: 90px;
 }
 img{
-  width: 95%;
+  width: 100%;
   margin-bottom: 20px;
 }
 .captioncontainer {
@@ -65,11 +70,17 @@ img{
   border: 1px solid #ccc;
   margin-bottom: 10px;
 }
-
+.main-story {
+    display: inline-block;
+    width: 45%;
+    margin-right: 2%;
+    margin-left: 2%;
+    vertical-align: top;
+}
 
 p {
   font-family: 'Roboto', sans-serif;
-  font-size: 3em;
+  font-size: 4em;
   margin-top: 1.6%;
   color: #000;
   text-align: center;
@@ -105,16 +116,16 @@ img:hover{
 }
 .pubcontainer{
   clear: both;
-}
-.captioncontainer p{
-  height: 45px;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 26px;
   text-align: center;
-  margin-top: -4px;
-  margin-left: -20px;
-
+}
+.captioncontainer p {
+    /* height: 45px; */
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: center;
+    /* margin-top: -4px; */
+    /* margin-left: -20px; */
 }
 p.text{
   font-family: 'Roboto', sans-serif;
@@ -154,13 +165,13 @@ p.resume-date{
   margin: 1em 0em 3em 0em;
 }
 p.publication {
-  text-align: center;
-  width: 60%;
-  font-family: 'Roboto', sans-serif;
-  font-size: 21pt;
-  padding-bottom: 3px;
-  font-weight: 300;
-  margin: 20px auto;
+    text-align: center;
+    /* width: 60%; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 27pt;
+    /* padding-bottom: 3px; */
+    font-weight: 300;
+    margin: 20px auto;
 }
 .divider{
   clear: both;
