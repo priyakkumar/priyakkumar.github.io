@@ -1,60 +1,8 @@
 
 body{
   margin: 0 auto!important;
-}
-.topbar{
-  width: 100%;
-  height: 55px;
-  /*background-color: #AACD4B;*/
-  margin-bottom: 35px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-h2{
-  text-align: center!important;
   font-family: 'Roboto', sans-serif;
-  margin-bottom: 25px;
 }
-a.resume, a.resume:visited{
-  color: #333;
-  text-decoration: none;
-}
-p.name{
-  text-align: center;
-    line-height: 2px;
-    color: #333;
-    font-weight: 300;
-    margin-top: 40px;
-}
-
-#about{
-  margin-top: 90px;
-}
-img{
-  width: 100%;
-  margin-bottom: 20px;
-}
-.captioncontainer {
-  margin-bottom: 20px;
-}
-/*.large{
-  width: 50%;
-}*/
-.wapo{
-  width: 100%;
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-#name {
-  height: 10%;
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 15%;
-  position: absolute;
-  background-color: #AACD4B;
-}
-
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.0.3');
@@ -62,262 +10,101 @@ img{
   font-weight: normal;
   font-style: normal;
 }
-
-.panel {
-  width: 30%;
-  height: auto;
-  margin-right: 1%;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-}
-.main-story {
-    display: inline-block;
-    width: 45%;
-    margin-right: 2%;
-    margin-left: 2%;
-    vertical-align: top;
-}
-
-p {
+p, h1, h2, .year {
   font-family: 'Roboto', sans-serif;
-  font-size: 4em;
-  margin-top: 1.6%;
+}
+p{
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.year {
+    margin-bottom: 3px;
+    font-weight: 400;
+    color: #777;
+    font-size: 14px;
+}
+h1.name{
+  text-align: center;
   color: #000;
+  font-weight: 300;
+  margin-top: 40px;
+}
+h2{
+  text-align: center;
+  font-weight: normal;
+}
+.topbar {
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e9a6d8;
+}
+#about{
+  margin-top: 20px;
+}
+img{
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,1);
+  box-shadow: 0px 0px 10px 2px rgba(204,204,204,1);
+
+}
+.story {
+    max-width: 450px;
+    width: 95%;
+    margin: 4vh auto;
+}
+.story p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 26px;
   text-align: center;
 }
-
-p.title {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #fff;
+p.text {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    max-width: 650px;
+    margin: 10px auto;
 }
-p.header:hover{
-  color: #AACD4B;
-}
-
-img.nbn {
-    /* margin-right: 1%; */
-    border: 1px solid #ccc;
-    margin-bottom: 19px;
-}
-
-img.online {
-  border: 1px solid #d6d6d6;
-}
-
-img:hover{
-  opacity: 0.7;
-}
-
-.onlinebox{
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
+.highlight span{
+  background-color: #ffeffb;
+  padding: 2px;
 }
 .pubcontainer{
-  clear: both;
-  text-align: center;
-}
-.captioncontainer p {
-    /* height: 45px; */
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 26px;
-    text-align: center;
-    /* margin-top: -4px; */
-    /* margin-left: -20px; */
-}
-p.text{
-  font-family: 'Roboto', sans-serif;
-  font-size: 15pt;
-  font-weight: 300;
-  line-height: 33px; 
-  margin-top: 1%; 
-  text-align: center;
-}
-
-
-.resume {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.resume p.publication{
-  text-align: left;
-   width: 100%;
-}
-
-.resume p{
-  font-family: 'Roboto', sans-serif;
-  text-align: left;
-  width: 100%;
-}
-p.resume{
-  font-size: 14pt;
-  font-weight: 200;
-  line-height: 30px; 
-}
-p.resume-date{
-  /* width: 80%; */
-  font-size: 0.9em;
-  font-weight: 300;
-  /* margin-left: 5em; */
-  margin: 1em 0em 3em 0em;
-}
-p.publication {
-    text-align: center;
-    /* width: 60%; */
-    font-family: 'Roboto', sans-serif;
-    font-size: 27pt;
-    /* padding-bottom: 3px; */
-    font-weight: 300;
-    margin: 20px auto;
-}
-.divider{
-  clear: both;
-  width: 80%;
-  margin: 20px auto 0px auto;
-  border-bottom: 2px dashed #A2F452;
-}
-i {
-  font-size: 22pt;
-  margin-right: 10px;
-  color: #606060;
-  margin-top: 30px;
-  margin-bottom: 12px;
-}
-.graphic{
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-}
-i:hover{
-  color: #AACD4B;
-  cursor: pointer;
+  margin-top: 5vh;
 }
 a{
   text-decoration: none;
 }
-a:hover, a:visited {
-  color: #AACD4B!important;
+a:hover{
+  text-decoration: underline;
 }
-.captioncontainer p:hover {
-  color: #AACD4B!important;
+.inline-links{
+  text-align: center;
+  color: #b9409a!important;
+  font-weight: 400;
+  font-size: 16px;
 }
-a:visited {
-  color:#000;
-  text-decoration: none;
+.inline-links a, .inline-links a:hover, .inline-links a:visited {
+  color: #b9409a!important;
+  margin: 0px 4px 0px 0px;
 }
-
-/*ACCORDION STYLING*/
-
-/*! jQuery UI - v1.10.3 - 2013-05-03
-* http://jqueryui.com
-* Includes: jquery.ui.core.css, jquery.ui.accordion.css, jquery.ui.autocomplete.css, jquery.ui.button.css, jquery.ui.datepicker.css, jquery.ui.dialog.css, jquery.ui.menu.css, jquery.ui.progressbar.css, jquery.ui.resizable.css, jquery.ui.selectable.css, jquery.ui.slider.css, jquery.ui.spinner.css, jquery.ui.tabs.css, jquery.ui.tooltip.css
-* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Verdana%2CArial%2Csans-serif&fwDefault=normal&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=cccccc&bgTextureHeader=highlight_soft&bgImgOpacityHeader=75&borderColorHeader=aaaaaa&fcHeader=222222&iconColorHeader=222222&bgColorContent=ffffff&bgTextureContent=flat&bgImgOpacityContent=75&borderColorContent=aaaaaa&fcContent=222222&iconColorContent=222222&bgColorDefault=e6e6e6&bgTextureDefault=glass&bgImgOpacityDefault=75&borderColorDefault=d3d3d3&fcDefault=555555&iconColorDefault=888888&bgColorHover=dadada&bgTextureHover=glass&bgImgOpacityHover=75&borderColorHover=999999&fcHover=212121&iconColorHover=454545&bgColorActive=ffffff&bgTextureActive=glass&bgImgOpacityActive=65&borderColorActive=aaaaaa&fcActive=212121&iconColorActive=454545&bgColorHighlight=fbf9ee&bgTextureHighlight=glass&bgImgOpacityHighlight=55&borderColorHighlight=fcefa1&fcHighlight=363636&iconColorHighlight=2e83ff&bgColorError=fef1ec&bgTextureError=glass&bgImgOpacityError=95&borderColorError=cd0a0a&fcError=cd0a0a&iconColorError=cd0a0a&bgColorOverlay=aaaaaa&bgTextureOverlay=flat&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=aaaaaa&bgTextureShadow=flat&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px
-* Copyright 2013 jQuery Foundation and other contributors Licensed MIT */
-
-/* Layout helpers
-----------------------------------*/
+.pubcontainer a, .pubcontainer a:hover, .pubcontainer a:visited{
+  color: #333;
+}
+.pubcontainer a img{
+  margin-bottom: -10px;
+}
+.pubcontainer a:hover img{
+  opacity: 0.8;
+  /* border-bottom: 1px solid #e9a6d8; */
+}
+/*THIS IS SO YOU CAN STILL REMEMBER IT BUT NOT SHOW IT ON YOUR WEBBY SITEYYY*/
+.archive{
+  display: none;
+}
 
 /*MEDIA QUERIES*/
-
-@media (max-width: 1152px) {
-  p {
-    font-size: 4em;   
-    margin-top: 5%;
-  }
-
-  #name {
-    margin-left: 10%;
-    margin-right: 5%;
-    width: 75%;
-  }
-
-  p {
-    margin-top: 3.5%;
-  }
-
-}
-
-  @media (max-width: 1080px) {
-  p {
-    font-size: 2em;   
-    margin-top: 5%;
-  }
-
-  #name {
-    margin-left: 10%;
-    margin-right: 5%;
-    width: 75%;
-  }
-  .onlinebox{
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  }
-}
-
-  @media (max-width: 768px) {
-  p {
-    font-size: 2em;   
-    margin-top: 7%;
-  } 
-
-  .resume {
-    width: 100%;
-  }
-
-  #name {
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 85%;
-  }
-
-  #onlinecontainer {
-    width: 100%;
-  }
-
-}
- 
-@media (max-width: 480px) { 
-
-  p {
-    font-size: 1.7em;   
-    margin-top: 5%;
-  }
-
-  #name {
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 85%;
-  }
-
- }
-
-@media screen and (max-width: 400px) {
-
-img.online {
-  margin-left: 0em;
-  width: 100%;
-}
-
-.captioncontainer {
-  margin-left: 0;
-  width: 100%;
-  }
-
-.panel {
-  width: 90%;
-  height: auto;
-  margin: 0 auto;
- }
-
-}
-
-@media screen (max-width: 320px) {
-  img {
-    margin: 0 auto;
-  }
-
-}
