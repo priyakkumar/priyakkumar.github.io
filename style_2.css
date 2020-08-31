@@ -29,10 +29,13 @@ h1.name{
   color: #000;
   font-weight: 300;
   margin-top: 40px;
+  font-size: 2.1em;
 }
 h2{
   text-align: center;
   font-weight: normal;
+  margin-top: 5vh;
+
 }
 .topbar {
   width: 100%;
@@ -53,7 +56,7 @@ img{
 
 }
 .story {
-    max-width: 450px;
+    max-width: 420px;
     width: 95%;
     margin: 4vh auto;
 }
@@ -74,7 +77,12 @@ p.text {
   padding: 2px;
 }
 .pubcontainer{
-  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 950px;
+  width: 95%;
+  margin: 0vh auto;
+  justify-content: space-around;
 }
 a{
   text-decoration: none;
@@ -92,6 +100,7 @@ a:hover{
   color: #b9409a!important;
   margin: 0px 4px 0px 0px;
 }
+
 .pubcontainer a, .pubcontainer a:hover, .pubcontainer a:visited{
   color: #333;
 }
@@ -106,5 +115,27 @@ a:hover{
 .archive{
   display: none;
 }
+.awards_text{
+  max-width: 650px;
+  width: 95%;
+  margin: 10px auto;
+}
+.awards_text p span{
+  margin-right: 20px;
+  font-weight: 700;
+}
+footer p{
+    text-align: center;
+    color-scheme: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #777;
+    /* background: pink; */
+    /* line-height: 0; */
+}
 
+footer{
+  margin-bottom: -15px;
+    background: #ffeffa;
+}
 /*MEDIA QUERIES*/
