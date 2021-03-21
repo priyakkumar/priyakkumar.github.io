@@ -46,7 +46,11 @@ h2{
   background: #e9a6d8;
 }
 #about{
-  margin-top: 20px;
+  /*margin-top: 90px;*/
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 img{
   width: 100%;
